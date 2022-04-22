@@ -8,7 +8,7 @@
 /*Body*/
 body{
     font-family: 'Saira Condensed', sans-serif;
-    background-color: #ffde59;
+    background-image: radial-gradient(circle, #ffeb69, #ffe858, #ffe445, #ffe12e, #ffdd00);
 }
 
 /*Header*/
@@ -43,9 +43,11 @@ header{
     text-decoration: none;
     color: #ffde59;
     font-weight: 700;
+    cursor: pointer;
 }
 .menu ul li a:hover{
-    color: #be9f23;
+    color: #ffcc00;
+    text-decoration: underline;
 }
 @media screen and (min-width: 200px) and (max-width:604px){
     .menu ul{
@@ -171,25 +173,6 @@ hr{
     
 }
 
-.boton {
-    background-color: #000000; 
-    border-radius: 4px;
-    color: #ffde59;
-    padding: 14px 10px;
-    text-align: right;
-    font-size: 16px;
-}
-
-
-.boton2{
-    display: flex;
-    background-color: #000000; 
-    border-radius: 4px;
-    color: #ffde59;
-    padding: 14px 10px;
-    text-align: right;
-    font-size: 16px;
-}
 
 .boton3{
     background-color: #000000; 
@@ -197,11 +180,16 @@ hr{
     color: #ffde59;
     padding: 5px 10px;
     text-align: right;
-    font-size: 16px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.boton3:hover{
+    color: #000000;
+    background-color: #ffdd00;
 }
 /*Footer*/
 footer{
-    background-color: #ffde59;
+    background-color: #FFEB69;
     position: relative;
     
 }
@@ -247,7 +235,7 @@ footer{
 iframe{
     border-radius: 5px;
     padding-right: 0px;
-    box-shadow: #aaa6a6 8px 2px 8px;
+    box-shadow: #1e1e1b 2px 5px 7px;
     width: 50%;
     display: block;
 }
@@ -257,11 +245,11 @@ iframe{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: right;
+    text-align: e;
     font-size: 25px;
-    
 }
 
+    
 .contactanos-index{
     display: flex;
     size: 10%;
