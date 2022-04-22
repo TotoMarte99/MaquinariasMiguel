@@ -41,13 +41,15 @@ header{
 }
 .menu ul li a{
     text-decoration: none;
-    color: #ffde59;
+    color: #ffdd00;
     font-weight: 700;
     cursor: pointer;
 }
 .menu ul li a:hover{
-    color: #ffcc00;
-    text-decoration: underline;
+    background-color: #424242;
+    border-radius: 12px;
+    box-shadow: #ffdd00 2px 2px 2px;
+    padding: 7px;
 }
 @media screen and (min-width: 200px) and (max-width:604px){
     .menu ul{
