@@ -1,106 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Maquinarias Miguel</title>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/18505f9807.js" crossorigin="anonymous"></script>
+    <!--Shortcut Icon-->
+    <link rel="shortcut icon" href="../imagenes/logo12.png" type="image/x-icon">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!--Animate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="shortcut icon" href="/imagenes/logo12.png" type="image/x-icon">    
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;400&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <title>Contacto | Maquinarias Miguel</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;400&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-            <div class="logo-container">
-                <a href="index.html"><img src="../imagenes/logo12.png" alt="Logo Maquinarias Miguel"></a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../imagenes/logo12.png" alt="logo" width="80" height="80"
+                        class="d-inline-block align-top"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-togglere-icon"><img src="../imagenes/menu.png" alt="" width="30"
+                            height="30"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li>
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center">
+                        <li>
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center">
+                        <li>
+                            <a class="nav-link" href="showroom.html">ShowRoom</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center">
+                        <li>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center">
+                        <li>
+                            <a class="nav-link" href="Preg_frecuentes.html">Preguntas</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-            <nav class="menu"> 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="showroom.html">ShowRoom</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="Preg_frecuentes.html">Preguntas</a></li>
-                
-            </ul>
-        </nav>
     </header>
-            <form class="contenedor-contacto"> 
-                <fieldset>
-                    <legend>Formulario de Contacto</legend>
-
-    
-                    <label></label>
-                    <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-
-
-    
-                    <label></label>
-                    <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-
-
-    
-                    <label></label>
-                    <input class="email" type="email" id="email" name="email" placeholder="Email" required>
-
-                    <select name="Lista">
-                        <option value="0">Elige una opcion</option>
-                            <option value="1">Sos cliente frecuente</option>
-                                <option value="2">Sos un nuevo cliente</option>
-                    </select>
-        <div class="news">
-            <label class="NewsLetter">¿Deseas suscribirte al NewsLetter?</label>
+    <form class="contenedor-contacto">
+        <fieldset>
+            <legend>Formulario de Contacto</legend>
+            <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            <input class="email" type="email" id="email" name="email" placeholder="Email" required>
+            <select name="Lista">
+                <option value="0">Elige una opcion</option>
+                <option value="1">Sos cliente frecuente</option>
+                <option value="2">Sos un nuevo cliente</option>
+            </select>
+            <div class="news">
+                <label class="NewsLetter">¿Deseas suscribirte al NewsLetter?</label required>
                 <input type="checkbox">
             </div>
-
-        <div>
-            <label class="consulta">Escribanos su consulta:</label>
+            <div>
+                <label class="consulta">Escribanos su consulta:</label>
                 <textarea></textarea>
-        </div>
-
-    <div>
-        <input class="mandar" type="submit" value="Aceptar">
-            <input class="borrar" type="reset" value="Limpiar Datos">
-        </div>
-
-    </fieldset>
-</form>
-    <footer>
-        <hr>
-            <div class="informacion">
-                <h3 class="titulofooter wow animate__animated animate__bounce animate__delay-5s">¿Donde estamos ubicados?</h3>
-                    <h5 class="direccion">Triunvirato 596 - 341-4551334</h5>
             </div>
-                    <div class="mapa"> 
-                        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26802.035483348278!2d-60.70603520504789!3d-32.8914405299889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65367a33aeb19%3A0xfdb4f38c645c7bd7!2sMaquinarias%20Miguel!5e0!3m2!1ses-419!2sar!4v1648047518498!5m2!1ses-419!2sar" width="1070" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        <div class="horarios">
-                            <p> 
-                                <strong>
-                                <div><u>Horarios de atención</u></div>
-                                <div class="dias"> Lunes: 8am a 13pm </div>  
-                                <div class="dias">Martes: 8am a 13pm </div> 
-                                <div class="dias">Miercoles: 8am a 13pm</div>  
-                                <div class="dias">Jueves: 8am a 13pm </div> 
-                                <div class="dias"> Viernes: 8am a 13pm </div> 
-                            </p>
-                        </strong>
-                        <br>
-                        </div>
-        <div class="seguinos">
-            <h5>¡Seguinos en nuestras redes sociales!</h5>
+
+            <div>
+                <input class="mandar" type="submit" value="Aceptar">
+                <input class="borrar" type="reset" value="Limpiar Datos">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <div class="informacion">
+            <h3 class="titulofooter wow animate__animated animate__bounce animate__delay-5s">¿Donde estamos ubicados?
+            </h3>
+            <h5 class="direccion">Triunvirato 596 - 341-4551334</h5>
         </div>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26802.035483348278!2d-60.70603520504789!3d-32.         8914405299889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65367a33aeb19%3A0xfdb4f38c645c7bd7!2sMaquinarias%20Miguel!5e0!3m2!1ses-419!2sar!4v1648047518498!5m2!1ses-419!2sar"
+                width="1070" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <div class="horarios">
+                <p>
+                    <strong>
+                        <div><u>Horarios de atención</u></div>
+                        <div class="dias"> Lunes: 8am a 13pm </div>
+                        <div class="dias">Martes: 8am a 13pm </div>
+                        <div class="dias">Miercoles: 8am a 13pm</div>
+                        <div class="dias">Jueves: 8am a 13pm </div>
+                        <div class="dias"> Viernes: 8am a 13pm </div>
+                </p>
+                </strong>
+                <br>
+            </div>
+            <div class="seguinos">
+                <h5>¡Seguinos en nuestras redes sociales!</h5>
+            </div>
             <div class="redes">
                 <a href="https://www.instagram.com/maquinariasmiguel/">
-                    <img class="logoinstagram wow animate__animated animate__shakeY animate__delay-6s" src="/imagenes/instagram.png" alt="Logo instagram"> </a> 
-                        <a href="https://www.facebook.com/maquinariasmiguel/"> <img class="logofacebook" src="/imagenes/facebook.png" alt="Logo facebook"></a>
-                    </div>
-                <div class="derechos">
-                    <h6>Todos los derechos reservados Maquinarias Miguel</h6>
-                </div>
+                    <img class="logoinstagram wow animate__animated animate__shakeY animate__delay-6s"
+                        src="/imagenes/instagram.png" alt="Logo instagram"> </a>
+                <a href="https://www.facebook.com/maquinariasmiguel/"> <img class="logofacebook"
+                        src="/imagenes/facebook.png" alt="Logo facebook"></a>
             </div>
-        </footer>
-    </body>
+            <div class="derechos">
+                <h6>Todos los derechos reservados Maquinarias Miguel</h6>
+            </div>
+
+    </footer>
+
+    <!--Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
