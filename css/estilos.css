@@ -432,6 +432,7 @@ fieldset legend {
 .nombre:focus,
 .apellido:focus,
 .email:focus,
+
 textarea {
     outline: none;
 }
@@ -446,7 +447,7 @@ textarea {
 
 }
 
-.grid .border {
+.grid .border { 
     background-color: antiquewhite;
     text-align: center;
     border: 1px solid black;
