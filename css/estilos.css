@@ -198,8 +198,8 @@ fieldset legend {
   border-radius: 4px;
   box-sizing: border-box;
   font-weight: 600;
-}
 
+  
 .email {
   width: 100%;
   padding: 12px 20px;
@@ -209,6 +209,13 @@ fieldset legend {
   border-radius: 4px;
   box-sizing: border-box;
   font-weight: 600;
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
 }
 
 textarea {
@@ -474,6 +481,7 @@ section#Footer {
   display: block;
   text-align: center;
 }
+
 
 .about {
   display: flex;
