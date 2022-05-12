@@ -4,11 +4,18 @@ $color2: #000000;
 $color3: #ffdd00;
 $color4: #ffde59;
 $colorhover: #ffaa00;
-$fuente: 'Roboto', sans-serif;;
+$fuente:'Saira Condensed', sans-serif;;;
 
 //Particiones//
 @import '@medias';
 @import 'contacto';
+
+//Maps//
+$display:(
+    d1: flex,
+    d2: grid,
+    d3: block,
+);
 
 //Reseteo CSS//
 * {
@@ -26,9 +33,11 @@ body {
     
 }
 //Header//
+$d1: map-get($display, d1);
+
 header {
     background-color: $color2;
-    display: flex;
+    display: $d1;
     justify-content: center;
     align-items: center;
     margin-bottom: 7px;
@@ -41,14 +50,22 @@ header {
         color: #fbe9b1;
         
     }
+    .navbar-dark .navbar-toggler {
+        color: rgba(255,255,255,.55);
+        border-color: rgba(255,255,255,.1);
+        height: 50px;
+    }
 }
 //Seccion 1
 .w-100 {
     width: 100% !important;
     height: auto;
 }
+
+$d2: map-get($display, d2);
+
 .servicios {
-    display: grid;
+    display: $d2;
     .border{
     padding: 100px;
     background-color: $color2;
@@ -58,8 +75,9 @@ header {
     padding-top: 100px;
     }
 }
+
 section#img1 {
-    background-image: url(../imagenes/Acc.jpg);
+    background-image: url(../Img_Avif/Acc.avif);
     background-position: center;
     background-repeat: no-repeat;
     color: $color1;
@@ -68,26 +86,30 @@ section#img1 {
     text-align: center;
 }
 section#img2 {
-    background-image: url(../imagenes/rep.jpg);
+    background-image: url(../Img_Avif/rep.avif);
     background-position: center;
     background-repeat: no-repeat;
 }
 section#img3 {
-    background-image: url(../imagenes/Maq1.jpg);
+    background-image: url(../Img_Avif/Maq1.avif);
     background-position: center;
     background-repeat: no-repeat;
 }
 //Seccion 2
+$d1: map-get($display, d1);
+
 .Marcas {
     padding-top: 50px;
-    display: flex;
+    display: $d1;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     font-size: xx-large;
 }
+$d2: map-get($display, d2);
+
 .contenedor-de-imagenes {
-    display: grid;
+    display: $d2;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
     align-items: center;
@@ -99,8 +121,11 @@ footer {
     hr {
         background-color: $color2;
     }
+
+    $d1: map-get($display, d1);
+
     .informacion {
-        display: flex;
+        display: $d1;
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
@@ -112,123 +137,144 @@ footer {
         }
     }
 }
+
+$d3: map-get($display, d3);
+
 .mapa {
-    display: block;
+    display: $d3;
     text-align: right;
     width: 100%;
 }
+$d1: map-get($display, d1);
+
 .redes{
-    display: flex;
+    display: $d1;
     justify-content: right;
 }
-.logoinstagram{
-    width: 40px;
-}
-.logofacebook {
-    width: 40px;
-}
+
+$d1: map-get($display, d1);
 
 .derechos {
-    display: flex;
+    display: $d1;
     justify-content: center;
 }
 
+
+$d3: map-get($display, d3);
 
 iframe {
     border-radius: 5px;
     padding-right: 0px;
     box-shadow: #1e1e1b 2px 5px 7px;
     width: 50%;
-    display: block;
+    display: $d3;
 }
+$d1: map-get($display, d1);
+
 .horarios {
-    display: flex;
+    display: $d1;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-size: 25px;
     
 }
+$d1: map-get($display, d1);
+
 .contactanos-index {
-    display: flex;
+    display: $d1;
     size: 10%;
 }
-.seguinos {
-    display: flex;
-    font-size: larger;
-    justify-content: right;
-    h5{
-        font-size: large;
-    }
-}
+
+
 //ShowRoom
+$d2: map-get($display, d2);
+
 .grid {
-    display: grid;
+    display: $d2;
     background-color: rgb(255, 255, 255);
     height: 100vh;
     .border { 
-    background-color: antiquewhite;
-    text-align: center;
-    border: 1px solid $color2;
-    color: $color2;
+        background-color: antiquewhite;
+        text-align: center;
+        border: 1px solid black;
+        color: rgb(20, 19, 19);
     }
 }
-
+@mixin background($bk-s, $bk-p, $bk-img) {
+    background-size: $bk-s;
+    background-position: $bk-p;
+    background-image: $bk-img
+}
 section#Inicio {
-    background-image: url(../imagenes/HD\ wallpaper_\ sewing\ machine\,\ old\,\ vintage\,\ antique\,\ needle\,\ craft\,\ tailoring.jpeg);
-    background-size: cover;
-    background-position: center;
+    @include background(cover, center, url(../Img_Avif/HD-wallpaper_-sewing-machine_-old_-vintage_-antique_-needle_-craft_-tailoring.avif))
 }
-
 section#Productos {
-
-    background-image: url(../imagenes/london-g7f158879b_1920.jpg);
-    background-size: cover;
+    @include background(cover, center, url(../Img_Avif/london-g7f158879b_1920.avif))
 }
-
 section#Servicios {
-
-    background-image: url(../imagenes/portobello-778864_1920.jpg);
-    background-size: cover;
-    background-position: center;
+    @include background(cover, center, url(../Img_Avif/portobello-778864_1920.avif))
 }
-
+    
 section#Nosotros {
-
-    background-image: url(../imagenes/sewing-machine-g1f1dea16d_1920.jpg);
-    background-size: cover;
-    background-position: center;
+    @include background(cover, center, url(../Img_Avif/sewing-machine-3728748_1920.avif))
 }
-
 section#Footer {
-
-    background-image: url(../imagenes/pexels-los-muertos-crew-7998338.jpg);
-    background-size: cover;
-    background-position: center;
-
+    @include background(cover, center, url(../Img_Avif/pexels-los-muertos-crew-7998338.avif))
 }
+
 //Pagina Preguntas Frecuentes
+$d3: map-get($display, d3);
+
 .preguntas {
     padding-top: 10px;
-    display: block;
+    display: $d3;
     text-align: center;
     line-height: 50px;
     color: $color3;
     background-color: $color2;
     font-size: large;
+    padding-bottom: 40px;
 }
+$d3: map-get($display, d3);
+
 .contactopreg {
-    display: block;
+    display: $d3;
     text-align: center;
 }
 //Pagina Nosotros
-.about {
-    display: flex;
+$d2: map-get($display, d2);
+
+.about{
+    display: $d2;
     flex-direction: column;
-    text-align: center;
-    margin-top: 0%;
-    font-size: large;
-    line-height: 40px;
+    align-items: center;
+    margin: 10px;
+    font-size: x-large;
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    
+}
+$d1: map-get($display, d1);
+
+.contactanos{
+    display: $d1;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    h3{
+        font-size: 40px;
+        text-align: center;
+        
+        
+    }
 }
 //Botones
 .boton3 {
@@ -239,14 +285,16 @@ section#Footer {
     text-align: right;
     font-size: 15px;
     cursor: pointer;     
-    .boton3:hover {
-        color: $color2;
-        background-color: $color3
-    }
+    
+}
+.boton3:hover {
+    color: $color2;
+    background-color: $color3
 }
 input:hover {
     background-color: $colorhover;
     border: solid $color2;
     
 }
+
 

@@ -1,90 +1,70 @@
 //Pagina Contacto
+@mixin contacto ($dis, $box-sz, $w, $fnt-w, $pd, $mg) {
+    display:  $dis;
+    box-sizing: $box-sz;
+    width: $w;
+    font-weight: $fnt-w;
+    padding: $pd;
+    margin: $mg;
+}
+
 fieldset {
     min-width: 0;
     padding: 10px;
     margin: 0px;
     border: 0;
     background-color: beige;
+    .nombre{
+        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
+        border: 1px solid rgb(82, 79, 79);
+        border-radius: 4px;
+    }
+    .apellido{
+        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
+        border: 1px solid rgb(82, 79, 79);
+        border-radius: 4px;
+    }
+    .email{
+        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
+    border: 1px solid rgb(82, 79, 79);
+    border-radius: 4px;
+    }
+    input:hover {
+        background-color: #f8ed4e;
+    }
+    textarea {
+        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
+    border: 1px solid rgb(82, 79, 79);
+    border-radius: 4px;
+    }
+    .NewsLetter {
+        padding-top: 5px;
+    }
+    @mixin Confirmacion ($cl, $bd-style, $cur, $back-c, $wd, $pd, $mrg, $bd-r, $fnt-w) {
+        color: $cl;
+        border-style: $bd-style;
+        cursor: $cur;
+        background-color: $back-c;
+        width: $wd;
+        padding: $pd;
+        margin: $mrg;
+        border-radius: $bd-r;
+        font-weight: $fnt-w;
+    }
+    .mandar{
+        @include Confirmacion(black, none, pointer, #ffde59, 100%, 15px 20px,8px 0,4px,600)
+    }
+    .borrar {
+        @include Confirmacion(black, none, pointer, #ffde59, 100%, 15px 20px,8px 0,4px,600)
+    }
     legend {
         display: block;
         width: 100%;
         text-align: center;
         font-size: xx-large;
-        text-shadow: 2px 5px 6px $color4;
+        text-shadow: 2px 5px 6px #ffde59;
     }
-}
-.nombre {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(82, 79, 79);
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-weight: 600;
-}
-.apellido {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(82, 79, 79);
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-weight: 600;
-}
-.email {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(82, 79, 79);
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-weight: 600;
-}
-textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(82, 79, 79);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.NewsLetter {
-    padding-top: 5px;
-}
-.mandar {
-    width: 100%;
-    background-color: $color4;
-    color: $color2;
-    padding: 15px 20px;
-    margin: 8px 0;
-    border-style: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-}
-.borrar {
-    width: 100%;
-    background-color: $color4;
-    color: $color2;
-    padding: 15px 20px;
-    margin: 8px 0;
-    border-style: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-
-}
-.contenedor-contacto {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0px 2px 2px $color2;
-
-}
-textarea {
-    outline: none;
+    textarea {
+        outline: none;
+    }
 }
