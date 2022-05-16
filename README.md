@@ -14,6 +14,6 @@ Tercer entrega del proyecto final <br>
     <li>Se modifico el BackGround.</li>
     <li>Se cambio el formato de las imagenes de .JPG a .Webp y .Avif</li>
     <li>Se agrego icono de WhatsApp en el footer.</li>
-    <li>Se vinculo netifly como servidor y se configuro el formulario para que este funcione</li>
+    <li>Se vinculo Netlify como servidor y se configuro el formulario para que este funcione</li>
 
 
