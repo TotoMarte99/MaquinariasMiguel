@@ -12,7 +12,6 @@ Tercer entrega del proyecto final <br>
   <ul>
     <li>Se modifico el boton de contacto, agregandole animación.</li>
     <li>Se modifico el BackGround.</li>
-    <li>Se modifico el BackGround.</li>
     <li>Se cambio el formato de las imagenes de .JPG a .Webp y .Avif</li>
     <li>Se agrego icono de WhatsApp en el footer.</li>
     <li>Se vinculo netifly como servidor y se configuro el formulario para que este funcione</li>
