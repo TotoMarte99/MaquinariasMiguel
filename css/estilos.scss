@@ -4,18 +4,11 @@ $color2: #000000;
 $color3: #ffdd00;
 $color4: #ffde59;
 $colorhover: #ffaa00;
-$fuente:'Saira Condensed', sans-serif;;;
+$fuente: 'Roboto', sans-serif;;
 
 //Particiones//
 @import '@medias';
 @import 'contacto';
-
-//Maps//
-$display:(
-    d1: flex,
-    d2: grid,
-    d3: block,
-);
 
 //Reseteo CSS//
 * {
@@ -33,11 +26,9 @@ body {
     
 }
 //Header//
-$d1: map-get($display, d1);
-
 header {
     background-color: $color2;
-    display: $d1;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 7px;
@@ -50,22 +41,14 @@ header {
         color: #fbe9b1;
         
     }
-    .navbar-dark .navbar-toggler {
-        color: rgba(255,255,255,.55);
-        border-color: rgba(255,255,255,.1);
-        height: 50px;
-    }
 }
 //Seccion 1
 .w-100 {
     width: 100% !important;
-    
+    height: auto;
 }
-
-$d2: map-get($display, d2);
-
 .servicios {
-    display: $d2;
+    display: grid;
     .border{
     padding: 100px;
     background-color: $color2;
@@ -75,9 +58,8 @@ $d2: map-get($display, d2);
     padding-top: 100px;
     }
 }
-
 section#img1 {
-    background-image: url(../Img_Avif/Acc.avif);
+    background-image: url(../imagenes/Acc.jpg);
     background-position: center;
     background-repeat: no-repeat;
     color: $color1;
@@ -86,30 +68,26 @@ section#img1 {
     text-align: center;
 }
 section#img2 {
-    background-image: url(../Img_Avif/rep.avif);
+    background-image: url(../imagenes/rep.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
 section#img3 {
-    background-image: url(../Img_Avif/Maq1.avif);
+    background-image: url(../imagenes/Maq1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
 //Seccion 2
-$d1: map-get($display, d1);
-
 .Marcas {
     padding-top: 50px;
-    display: $d1;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     font-size: xx-large;
 }
-$d2: map-get($display, d2);
-
 .contenedor-de-imagenes {
-    display: $d2;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
     align-items: center;
@@ -121,11 +99,8 @@ footer {
     hr {
         background-color: $color2;
     }
-
-    $d1: map-get($display, d1);
-
     .informacion {
-        display: $d1;
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
@@ -137,165 +112,140 @@ footer {
         }
     }
 }
-
-$d3: map-get($display, d3);
-
 .mapa {
-    display: $d3;
+    display: block;
     text-align: right;
     width: 100%;
 }
-$d1: map-get($display, d1);
-
 .redes{
-    display: $d1;
+    display: flex;
     justify-content: right;
 }
-
-$d1: map-get($display, d1);
+.logoinstagram{
+    width: 40px;
+}
+.logofacebook {
+    width: 40px;
+}
 
 .derechos {
-    display: $d1;
+    display: flex;
     justify-content: center;
 }
 
-
-$d3: map-get($display, d3);
 
 iframe {
     border-radius: 5px;
     padding-right: 0px;
     box-shadow: #1e1e1b 2px 5px 7px;
     width: 50%;
-    display: $d3;
+    display: block;
 }
-$d1: map-get($display, d1);
-
 .horarios {
-    display: $d1;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-size: 25px;
     
 }
-$d1: map-get($display, d1);
-
 .contactanos-index {
-    display: $d1;
+    display: flex;
     size: 10%;
 }
-
-
+.seguinos {
+    display: flex;
+    font-size: larger;
+    justify-content: right;
+    h5{
+        font-size: large;
+    }
+}
 //ShowRoom
-$d2: map-get($display, d2);
-
 .grid {
-    display: $d2;
+    display: grid;
     background-color: rgb(255, 255, 255);
     height: 100vh;
     .border { 
-        background-color: antiquewhite;
-        text-align: center;
-        border: 1px solid black;
-        color: rgb(20, 19, 19);
+    background-color: antiquewhite;
+    text-align: center;
+    border: 1px solid $color2;
+    color: $color2;
     }
 }
-@mixin background($bk-s, $bk-p, $bk-img) {
-    background-size: $bk-s;
-    background-position: $bk-p;
-    background-image: $bk-img
-}
+
 section#Inicio {
-    @include background(cover, center, url(../Img_Avif/HD-wallpaper_-sewing-machine_-old_-vintage_-antique_-needle_-craft_-tailoring.avif))
+    background-image: url(../imagenes/HD\ wallpaper_\ sewing\ machine\,\ old\,\ vintage\,\ antique\,\ needle\,\ craft\,\ tailoring.jpeg);
+    background-size: cover;
+    background-position: center;
 }
+
 section#Productos {
-    @include background(cover, center, url(../Img_Avif/london-g7f158879b_1920.avif))
+
+    background-image: url(../imagenes/london-g7f158879b_1920.jpg);
+    background-size: cover;
 }
+
 section#Servicios {
-    @include background(cover, center, url(../Img_Avif/portobello-778864_1920.avif))
+
+    background-image: url(../imagenes/portobello-778864_1920.jpg);
+    background-size: cover;
+    background-position: center;
 }
-    
+
 section#Nosotros {
-    @include background(cover, center, url(../Img_Avif/sewing-machine-3728748_1920.avif))
+
+    background-image: url(../imagenes/sewing-machine-g1f1dea16d_1920.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
 section#Footer {
-    @include background(cover, center, url(../Img_Avif/pexels-los-muertos-crew-7998338.avif))
+
+    background-image: url(../imagenes/pexels-los-muertos-crew-7998338.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
-
 //Pagina Preguntas Frecuentes
-$d3: map-get($display, d3);
-
 .preguntas {
     padding-top: 10px;
-    display: $d3;
+    display: block;
     text-align: center;
     line-height: 50px;
     color: $color3;
     background-color: $color2;
     font-size: large;
-    padding-bottom: 40px;
 }
-$d3: map-get($display, d3);
-
 .contactopreg {
-    display: $d3;
+    display: block;
     text-align: center;
 }
 //Pagina Nosotros
-$d2: map-get($display, d2);
-
-.about{
-    display: $d2;
+.about {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    font-size: x-large;
-    h1{
-        text-align: center;
-    }
-    h2{
-        text-align: center;
-    }
-    p{
-        text-align: center;
-    }
-    
-}
-$d1: map-get($display, d1);
-
-.contactanos{
-    display: $d1;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
-    h3{
-        font-size: 40px;
-        text-align: center;
-        
-        
-    }
+    text-align: center;
+    margin-top: 0%;
+    font-size: large;
+    line-height: 40px;
 }
 //Botones
-.boton{
-    display: inline-block;
+.boton3 {
+    background-color: $color2;
+    border-radius: 4px;
     color: $color3;
-    text-decoration: none;
-    padding: 10px 10px;
-    border: 3px solid $color4;
-    border-radius: 10px;
-    background-color: #000000;
-}
-
-.boton:hover{
-    animation: pulsate 1s ease-in-out;
-}
-@keyframes pulsate{
-    0%{
-        box-shadow: 
-        0 0 25px $color3,
-        0 0 50px $color2
+    padding: 5px 10px;
+    text-align: right;
+    font-size: 15px;
+    cursor: pointer;     
+    .boton3:hover {
+        color: $color2;
+        background-color: $color3
     }
 }
-
-
+input:hover {
+    background-color: $colorhover;
+    border: solid $color2;
+    
+}
