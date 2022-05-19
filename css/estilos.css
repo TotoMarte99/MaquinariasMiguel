@@ -136,7 +136,7 @@
   section#Productos {
     grid-column: 5/3;
     grid-row: 1/2;
-    background-image: url(../Img_Avif/london-g7f158879b_1920.avif);
+    background-image: url(../imagenes/hilos.jpg);
     background-size: cover;
   }
 
@@ -375,12 +375,18 @@ footer .informacion .titulofooter .direccion {
   justify-content: center;
 }
 
-iframe {
-  border-radius: 5px;
-  padding-right: 0px;
+.mapa {
+  display: flex;
+  justify-content: ce;
+  height: 500px;
+  margin-right: 20px;
+  padding: 50px;
+}
+.mapa iframe {
+  width: 100%;
   box-shadow: #1e1e1b 2px 5px 7px;
-  width: 50%;
-  display: block;
+  filter: drop-shadow(8px 8px 10px gray);
+  border-radius: 8px;
 }
 
 .horarios {
@@ -411,7 +417,7 @@ iframe {
 section#Inicio {
   background-size: cover;
   background-position: center;
-  background-image: url(../Img_Avif/HD-wallpaper_-sewing-machine_-old_-vintage_-antique_-needle_-craft_-tailoring.avif);
+  background-image: url(../imagenes/hilos.jpg);
 }
 
 section#Productos {
@@ -435,7 +441,7 @@ section#Nosotros {
 section#Footer {
   background-size: cover;
   background-position: center;
-  background-image: url(../Img_Avif/pexels-los-muertos-crew-7998338.avif);
+  background-image: url(../imagenes/Maquina1.jpg);
 }
 
 .preguntas {

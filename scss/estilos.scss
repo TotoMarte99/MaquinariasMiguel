@@ -160,14 +160,20 @@ $d1: map-get($display, d1);
 }
 
 
-$d3: map-get($display, d3);
+$d1: map-get($display, d1);
 
-iframe {
-    border-radius: 5px;
-    padding-right: 0px;
-    box-shadow: #1e1e1b 2px 5px 7px;
-    width: 50%;
-    display: $d3;
+.mapa{
+    display: $d1;
+    justify-content: ce;
+    height: 500px;
+    margin-right: 20px;
+    padding: 50px;
+    iframe{
+        width: 100%;
+        box-shadow: #1e1e1b 2px 5px 7px;
+        filter: drop-shadow(8px 8px 10px gray);
+        border-radius: 8px;
+    }
 }
 $d1: map-get($display, d1);
 
@@ -207,7 +213,7 @@ $d2: map-get($display, d2);
     background-image: $bk-img
 }
 section#Inicio {
-    @include background(cover, center, url(../Img_Avif/HD-wallpaper_-sewing-machine_-old_-vintage_-antique_-needle_-craft_-tailoring.avif))
+    @include background(cover, center, url(../imagenes/hilos.jpg))
 }
 section#Productos {
     @include background(cover, center, url(../Img_Avif/london-g7f158879b_1920.avif))
@@ -220,7 +226,7 @@ section#Nosotros {
     @include background(cover, center, url(../Img_Avif/sewing-machine-3728748_1920.avif))
 }
 section#Footer {
-    @include background(cover, center, url(../Img_Avif/pexels-los-muertos-crew-7998338.avif))
+    @include background(cover, center, url(../imagenes/Maquina1.jpg))
 }
 
 //Pagina Preguntas Frecuentes
