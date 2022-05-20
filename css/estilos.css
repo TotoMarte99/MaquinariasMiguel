@@ -165,75 +165,82 @@
   }
 }
 fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 0;
-  padding: 10px;
-  margin: 0px;
+  padding: 20px;
   border: 0;
-  background-color: beige;
 }
 fieldset .nombre {
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  width: 70%;
   font-weight: 600;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid rgb(82, 79, 79);
   border-radius: 4px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
 }
 fieldset .apellido {
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  width: 70%;
   font-weight: 600;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid rgb(82, 79, 79);
   border-radius: 4px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
 }
 fieldset .email {
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  width: 70%;
   font-weight: 600;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid rgb(82, 79, 79);
   border-radius: 4px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
 }
 fieldset input:hover {
-  background-color: #f8ed4e;
+  background-color: #eee567;
+  color: #000000;
 }
 fieldset textarea {
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  width: 70%;
   font-weight: 600;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid rgb(82, 79, 79);
   border-radius: 4px;
-}
-fieldset .NewsLetter {
-  padding-top: 5px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
 }
 fieldset .mandar {
-  color: black;
+  color: rgb(255, 199, 14);
   border-style: none;
   cursor: pointer;
-  background-color: #ffde59;
-  width: 100%;
+  background-color: #000000;
+  width: 50%;
   padding: 15px 20px;
   margin: 8px 0;
   border-radius: 4px;
   font-weight: 600;
 }
 fieldset .borrar {
-  color: black;
+  color: rgb(255, 199, 14);
   border-style: none;
   cursor: pointer;
-  background-color: #ffde59;
-  width: 100%;
+  background-color: #000000;
+  width: 50%;
   padding: 15px 20px;
   margin: 8px 0;
   border-radius: 4px;

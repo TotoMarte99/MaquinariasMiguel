@@ -9,37 +9,47 @@
 }
 
 fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-width: 0;
-    padding: 10px;
-    margin: 0px;
+    padding: 20px;
     border: 0;
-    background-color: beige;
+    
+    
     .nombre{
-        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
+        @include contacto(inline-block, border-box , 70%, 600, 12px 20px, 8px 0 );
         border: 1px solid rgb(82, 79, 79);
         border-radius: 4px;
+        text-align: center;
+        box-shadow: #000000 5px 5px 7px;
     }
     .apellido{
-        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
+        @include contacto(inline-block, border-box , 70%, 600, 12px 20px, 8px 0 );
         border: 1px solid rgb(82, 79, 79);
         border-radius: 4px;
+        text-align: center;
+        box-shadow: #000000 5px 5px 7px;
     }
     .email{
-        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
-    border: 1px solid rgb(82, 79, 79);
-    border-radius: 4px;
+        @include contacto(inline-block, border-box , 70%, 600, 12px 20px, 8px 0 );
+        border: 1px solid rgb(82, 79, 79);
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: #000000 5px 5px 7px;
     }
     input:hover {
-        background-color: #f8ed4e;
+        background-color: #eee567;
+        color: #000000
     }
     textarea {
-        @include contacto(inline-block, border-box , 100%, 600, 12px 20px, 8px 0 );
-    border: 1px solid rgb(82, 79, 79);
-    border-radius: 4px;
+        @include contacto(inline-block, border-box , 70%, 600, 12px 20px, 8px 0 );
+        border: 1px solid rgb(82, 79, 79);
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: #000000 5px 5px 7px;
     }
-    .NewsLetter {
-        padding-top: 5px;
-    }
+    
     @mixin Confirmacion ($cl, $bd-style, $cur, $back-c, $wd, $pd, $mrg, $bd-r, $fnt-w) {
         color: $cl;
         border-style: $bd-style;
@@ -52,10 +62,10 @@ fieldset {
         font-weight: $fnt-w;
     }
     .mandar{
-        @include Confirmacion(black, none, pointer, #ffde59, 100%, 15px 20px,8px 0,4px,600)
+        @include Confirmacion(rgb(255, 199, 14), none, pointer, #000000, 50%, 15px 20px,8px 0,4px,600)
     }
     .borrar {
-        @include Confirmacion(black, none, pointer, #ffde59, 100%, 15px 20px,8px 0,4px,600)
+        @include Confirmacion(rgb(255, 199, 14), none, pointer, #000000, 50%, 15px 20px,8px 0,4px,600)
     }
     legend {
         display: block;

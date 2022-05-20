@@ -74,30 +74,20 @@
             </nav>
         </div>
     </header>
-    <form action="" name="miformulario" method="POST"  class="contenedor-contacto" data-netlify="true">
-        <fieldset>
-            <legend>Formulario de Contacto</legend>
-            <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-            <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-            <input class="email" type="email" id="email" name="email" placeholder="Email" required>
-            <select name="Lista">
-                <option value="0">Elige una opcion</option>
-                <option value="1">Sos cliente frecuente</option>
-                <option value="2">Sos un nuevo cliente</option>
-            </select>
-            <div class="news">
-                <label class="NewsLetter">¿Deseas suscribirte al NewsLetter?</label required>
-                <input name="checkbox" type="checkbox">
-            </div>
-            <div>
-                <label name="consulta" class="consulta">Escribanos su consulta:</label>
-                <textarea></textarea>
-            </div>
-            <div>
+    <form action="" name="miformulario" method="POST" class="contenedor-contacto" data-netlify="true">
+        <div class="formulario_contacto">
+            <fieldset>
+                <strong>
+                    <legend>Contactanos</legend>
+                </strong>
+                <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <input class="email" type="email" id="email" name="email" placeholder="Email" required>
+                <textarea placeholder="Ingrese su consulta"></textarea>
                 <input class="mandar" type="submit" value="Aceptar">
                 <input class="borrar" type="reset" value="Limpiar Datos">
-            </div>
-        </fieldset>
+            </fieldset>
+        </div>
     </form>
     <footer>
         <div class="informacion">
@@ -113,19 +103,19 @@
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-            <div class="horarios">
-                <p>
+        <div class="horarios">
+            <p>
+                <strong>
+                    <div><u>Horarios de atención</u></div>
+                    <div class="dias"> Lunes: 8am a 13pm </div>
+                    <div class="dias">Martes: 8am a 13pm </div>
+                    <div class="dias">Miercoles: 8am a 13pm</div>
+                    <div class="dias">Jueves: 8am a 13pm </div>
+                    <div class="dias"> Viernes: 8am a 13pm </div>
                     <strong>
-                        <div><u>Horarios de atención</u></div>
-                        <div class="dias"> Lunes: 8am a 13pm </div>
-                        <div class="dias">Martes: 8am a 13pm </div>
-                        <div class="dias">Miercoles: 8am a 13pm</div>
-                        <div class="dias">Jueves: 8am a 13pm </div>
-                        <div class="dias"> Viernes: 8am a 13pm </div>
-                    <strong>
-                </p>
-                <br>
-            </div>
+            </p>
+            <br>
+        </div>
         <div class="redes">
             <a href="https://www.instagram.com/maquinariasmiguel/">
                 <img class="logoinstagram wow animate__animated animate__shakeY animate__delay-6s m-1"
