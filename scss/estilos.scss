@@ -77,7 +77,7 @@ $d2: map-get($display, d2);
 }
 
 section#img1 {
-    background-image: url(../Img_Avif/Acc.avif);
+    background-image: url(../imagenes/Acc.jpg);
     background-position: center;
     background-repeat: no-repeat;
     color: $color1;
@@ -86,12 +86,12 @@ section#img1 {
     text-align: center;
 }
 section#img2 {
-    background-image: url(../Img_Avif/rep.avif);
+    background-image: url(../imagenes/rep.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
 section#img3 {
-    background-image: url(../Img_Avif/Maq1.avif);
+    background-image: url(../imagenes/Maq1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -164,7 +164,7 @@ $d1: map-get($display, d1);
 
 .mapa{
     display: $d1;
-    justify-content: ce;
+    justify-content: center;
     height: 500px;
     margin-right: 20px;
     padding: 50px;
@@ -216,17 +216,17 @@ section#Inicio {
     @include background(cover, center, url(../imagenes/hilos.jpg))
 }
 section#Productos {
-    @include background(cover, center, url(../Img_Avif/london-g7f158879b_1920.avif))
+    @include background(cover, center, url(../imagenes/london-g7f158879b_1920.jpg))
 }
 section#Servicios {
-    @include background(cover, center, url(../Img_Avif/portobello-778864_1920.avif))
+    @include background(cover, center, url(../imagenes/HD\ wallpaper_\ sewing\ machine\,\ old\,\ vintage\,\ antique\,\ needle\,\ craft\,\ tailoring.webp))
 }
     
 section#Nosotros {
-    @include background(cover, center, url(../Img_Avif/sewing-machine-3728748_1920.avif))
+    @include background(cover, center, url(../imagenes/pexels-los-muertos-crew-7998338.webp))
 }
 section#Footer {
-    @include background(cover, center, url(../Img_Avif/pexels-los-muertos-crew-7998338.avif))
+    @include background(cover, center, url(../imagenes/portobello-778864_1920.webp))
 }
 
 //Pagina Preguntas Frecuentes
@@ -304,4 +304,14 @@ $d1: map-get($display, d1);
     }
 }
 
+.botonFinalizar_carrito{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px;
+    margin-bottom: 10px;
+    background-color: $color2;
+    color: $color3;
+    border-radius: 9px;
+}
 
