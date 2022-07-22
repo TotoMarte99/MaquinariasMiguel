@@ -20,14 +20,16 @@ boton4.addEventListener("click", Agregando4);
 let boton6 = document.getElementById("boton_06");
 boton6.addEventListener("click", Agregando6);
 
+
 function Agregando1() {
   carrito.push(Productos[0]);
   var elemento = document.createElement("div");
-  var productos = document.querySelector("#productos");
+  var productos = document.querySelector("#productos1");
 
-  var contenido = document.createTextNode(`
+  elemento.innerHTML =(`
     Marca: ${Productos[0].marca} - 
-    Precio: ${Productos[0].precio}`);
+    Precio: ${Productos[0].precio}
+    <p onclick="document.getElementById('productos1').innerHTML = '' "cursor="pointer">🗑️​</p>`);
   //Estilos//
   elemento.style.setProperty("text-align", "center");
   elemento.style.setProperty("padding", "10px");
@@ -40,18 +42,19 @@ function Agregando1() {
   elemento.style.setProperty("margin-bottom", "20px");
   elemento.style.setProperty("border-radius", "88px");
   elemento.style.setProperty("border","solid");
-  elemento.appendChild(contenido);
+  
   productos.appendChild(elemento);
 }
 
 function Agregando2() {
   carrito.push(Productos[1]);
   var elemento = document.createElement("div");
-  var productos = document.querySelector("#productos");
+  var productos = document.querySelector("#productos2");
 
-  var contenido = document.createTextNode(`
+  elemento.innerHTML =(`
     Marca: ${Productos[1].marca} - 
-    Precio: ${Productos[1].precio}`);
+    Precio: ${Productos[1].precio}
+    <p onclick="document.getElementById('productos2').innerHTML = '' "cursor="pointer">🗑️​</p>`);
   //Estilos//
   elemento.style.setProperty("text-align", "center");
   elemento.style.setProperty("padding", "10px");
@@ -64,18 +67,19 @@ function Agregando2() {
   elemento.style.setProperty("margin-bottom", "20px");
   elemento.style.setProperty("border-radius", "88px");
   elemento.style.setProperty("border","solid");
-  elemento.appendChild(contenido);
+  
   productos.appendChild(elemento);
 }
 
 function Agregando3() {
   carrito.push(Productos[2]);
   var elemento = document.createElement("div");
-  var productos = document.querySelector("#productos");
+  var productos = document.querySelector("#productos3");
 
-  var contenido = document.createTextNode(`
+  elemento.innerHTML =(`
     Marca: ${Productos[2].marca} - 
-    Precio: ${Productos[2].precio}`);
+    Precio: ${Productos[2].precio}
+    <p onclick="document.getElementById('productos3').innerHTML = '' "cursor="pointer">🗑️​</p>`);
   //Estilos//
   elemento.style.setProperty("text-align", "center");
   elemento.style.setProperty("padding", "10px");
@@ -88,18 +92,19 @@ function Agregando3() {
   elemento.style.setProperty("margin-bottom", "20px");
   elemento.style.setProperty("border-radius", "88px");
   elemento.style.setProperty("border","solid");
-  elemento.appendChild(contenido);
+  
   productos.appendChild(elemento);
 }
 
 function Agregando4() {
   carrito.push(Productos[3]);
   var elemento = document.createElement("div");
-  var productos = document.querySelector("#productos");
+  var productos = document.querySelector("#productos4");
 
-  var contenido = document.createTextNode(`
+  elemento.innerHTML =(`
     Marca: ${Productos[3].marca} - 
-    Precio: ${Productos[3].precio}`);
+    Precio: ${Productos[3].precio}
+    <p onclick="document.getElementById('productos4').innerHTML = '' "cursor="pointer"">🗑️​</p>`);
   //Estilos//
   elemento.style.setProperty("text-align", "center");
   elemento.style.setProperty("padding", "10px");
@@ -112,19 +117,21 @@ function Agregando4() {
   elemento.style.setProperty("margin-bottom", "20px");
   elemento.style.setProperty("border-radius", "88px");
   elemento.style.setProperty("border","solid");
-  elemento.appendChild(contenido);
+  
   productos.appendChild(elemento);
 }
 
 function Agregando6() {
   carrito.push(Productos[4]);
-  var productos = document.querySelector("#productos");
+  var productos = document.querySelector("#productos5");
   var elemento = document.createElement("div");
   
 
   elemento.innerHTML = (`
     Marca: ${Productos[4].marca} - 
-    Precio: ${Productos[4].precio}`);
+    Precio: ${Productos[4].precio}
+    <p onclick="document.getElementById('productos5').innerHTML = '' "cursor="pointer">🗑️​</p>`);
+    
   //Estilos//
   elemento.style.setProperty("text-align", "center");
   elemento.style.setProperty("padding", "10px");
@@ -137,8 +144,10 @@ function Agregando6() {
   elemento.style.setProperty("margin-bottom", "20px");
   elemento.style.setProperty("border-radius", "88px");
   elemento.style.setProperty("border","solid");
-  /* elemento.appendChild(contenido); */
+
   productos.appendChild(elemento);
+
+
 }
 
 //Boton Finalizar carrito//
@@ -151,6 +160,9 @@ function finalizadoCarrito() {
 }
 
 //Boton Vaciar carrito//
+
+
+
 let vaciarCarro = document.getElementById("vaciarCarro");
 vaciarCarro.addEventListener("click", carritoVaciado);
 
